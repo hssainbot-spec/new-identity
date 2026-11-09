@@ -1,1 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#101916">
+  <meta name="description" content="NEW IDENTITY — Discipline, recovery and progress.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="style.css">
+  <title>NEW IDENTITY</title>
+</head>
+<body>
+  <header class="top">
+    <div class="brand"><span class="mark">NI</span><div><b>NEW IDENTITY</b><small>DISCIPLINE · RECOVERY · SUCCESS</small></div></div>
+    <button id="notifyBtn" class="ghost" aria-label="Enable notifications">🔔</button>
+  </header>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">YOUR PERSONAL COMMAND CENTER</p>
+      <h1>NO STEP<br><em>BACK.</em></h1>
+      <p class="muted">Build yourself. One day at a time.</p>
+      <div class="dayline"><span id="dayLabel">DAY 01 / 30</span><span id="todayDate"></span></div>
+      <div class="progress"><i id="progressBar"></i></div>
+      <p class="progressText" id="progressText">0% completed today</p>
+    </section>
 
+    <section class="stats">
+      <article><span>💼</span><b id="jobCount">0</b><small>JOB ACTIONS</small></article>
+      <article><span>🏃</span><b id="runCount">0</b><small>WORKOUTS</small></article>
+      <article><span>🔥</span><b id="streakCount">0</b><small>COMMITMENT DAYS</small></article>
+    </section>
+
+    <section class="panel">
+      <div class="sectionHead"><div><p class="eyebrow">DAILY EXECUTION</p><h2>Today's mission</h2></div><span class="pill">7 TASKS</span></div>
+      <div id="taskList" class="tasks"></div>
+    </section>
+
+    <section class="panel">
+      <p class="eyebrow">YOUR THREE PRIORITIES</p><h2>Build the foundation</h2>
+      <div class="priority"><span>01</span><div><b>Career & income</b><small>Apply, follow up, build useful skills.</small></div><span>↗</span></div>
+      <div class="priority"><span>02</span><div><b>Recovery & self-control</b><small>Avoid triggers. Respond to urges with a healthy action.</small></div><span>↗</span></div>
+      <div class="priority"><span>03</span><div><b>Running & fitness</b><small>Train progressively. Rest is part of progress.</small></div><span>↗</span></div>
+    </section>
+
+    <section class="panel">
+      <p class="eyebrow">30-DAY ROADMAP</p><h2>Four stages</h2>
+      <div class="roadmap">
+        <div><b>01–07</b><span>START</span><small>Set your routine and prepare your CV.</small></div>
+        <div><b>08–14</b><span>DISCIPLINE</span><small>Apply consistently and protect your focus.</small></div>
+        <div><b>15–21</b><span>BUILD</span><small>Improve skills, stamina and consistency.</small></div>
+        <div><b>22–30</b><span>PROVE</span><small>Review results and plan your next month.</small></div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <p class="eyebrow">RUNNING PLAN</p><h2>Train smart</h2>
+      <p class="muted">Mon: easy run · Tue: strength · Wed: easy run · Thu: recovery walk · Fri: easy run · Sat: strength & mobility · Sun: rest.</p>
+      <p class="note">Begin with 1 minute easy jogging + 2 minutes walking for 20–25 minutes. Increase gradually only if you recover well. Stop if you feel sharp pain, dizziness or unusual breathlessness.</p>
+    </section>
+
+    <section class="panel">
+      <p class="eyebrow">RESET YOUR MIND</p><h2>When an urge appears</h2>
+      <ol class="steps"><li>Put your phone away and leave the triggering situation.</li><li>Change rooms or step outside.</li><li>Walk for 10 minutes or do a light activity.</li><li>Remember why you chose this commitment.</li><li>Return to your day without judging yourself.</li></ol>
+    </section>
+
+    <section class="panel">
+      <p class="eyebrow">DAILY REMINDERS</p><h2>Choose your reminder times</h2>
+      <div class="reminder"><label for="morningTime">Morning focus</label><input id="morningTime" type="time" value="07:00"></div>
+      <div class="reminder"><label for="workTime">Career action</label><input id="workTime" type="time" value="09:00"></div>
+      <div class="reminder"><label for="runTime">Training</label><input id="runTime" type="time" value="17:00"></div>
+      <div class="reminder"><label for="nightTime">Daily review</label><input id="nightTime" type="time" value="22:00"></div>
+      <button id="saveTimes" class="primary full">Save reminder times</button>
+      <p class="note">Notifications require permission. This starter can remind you while the app is open. Reliable reminders when the app is fully closed require a push-notification service or a native Android implementation.</p>
+    </section>
+
+    <section class="panel quote"><p class="eyebrow">YOUR DAILY PRINCIPLE</p><h2>“Discipline today creates the strength of tomorrow.”</h2><small>NO STEP BACK.</small></section>
+    <button id="resetBtn" class="reset">Reset today's checklist</button>
+  </main>
+  <footer>NEW IDENTITY <span>·</span> VERSION 1.0</footer>
+  <script src="app.js"></script>
+</body>
+</html>
